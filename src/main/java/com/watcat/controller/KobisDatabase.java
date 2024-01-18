@@ -53,7 +53,7 @@ public class KobisDatabase {
 
 		List<DailyBoxOfficeDto> APIResponse = null;
 		String dayInfo = null;
-		int responseResultNum = 0; // for문 돌아가는 동안 리스폰드 받은 List 데이터 전체 합
+		int responseResultNum = 0; // for문 돌아가는 동안 리스폰스 받은 List 데이터 전체 합
 		int databaseInsertSuccess = 0; // 데이터 인서트 결과
 		int databaseInsertFail = 0; // 인서트 실패
 		Map<String, String> AjaxResult = new HashMap<>();
@@ -155,7 +155,6 @@ public class KobisDatabase {
 						System.out.println("Insert Success : " + databaseInsertSuccess);
 						System.out.println("Insert Fail : " + databaseInsertFail);
 						Thread.sleep(1000*60*threadSleep); //1000 = 1초
-//						Thread.sleep(10000);
 					}
 				}catch(Exception e) {
 					e.printStackTrace();
